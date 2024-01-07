@@ -9,7 +9,10 @@ use Illuminate\Database\Seeder;
 use Database\Seeders\SoalSeeder;
 use Database\Seeders\UserSeeder;
 use Database\Seeders\UjianSeeder;
+use Database\Seeders\MateriSeeder;
+use Database\Seeders\ContentSeeder;
 use Database\Seeders\UjianSoalListSeeder;
+
 
 
 class DatabaseSeeder extends Seeder
@@ -29,8 +32,9 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             SoalSeeder::class,
             UjianSeeder::class,
-            UjianSoalListSeeder::class
-
+            UjianSoalListSeeder::class,
+            ContentSeeder::class,
+            MateriSeeder::class,
         ]);
     }
 }
