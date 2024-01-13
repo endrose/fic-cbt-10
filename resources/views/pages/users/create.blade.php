@@ -57,7 +57,7 @@
                             <div class="form-group">
                                 <label>Password Strength</label>
                                 <div class="input-group">
-                                    <div class="input-group-prepend">
+                                    <div class="input-group-prepand">
                                         <div class="input-group-text">
                                             <i class="fas fa-lock"></i>
                                         </div>
@@ -67,12 +67,11 @@
                                     is-invalid
                                 @enderror"
                                         name="password">
+                                    @error('password')
+                                        <div class="invalid-feedback">{{ $message }}</div>
+                                    @enderror
                                 </div>
-                                @error('password')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                @enderror
+
                             </div>
                             <div class="form-group">
                                 <label>Phone</label>
